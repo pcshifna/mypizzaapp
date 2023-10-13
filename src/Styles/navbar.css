@@ -1,0 +1,95 @@
+.navbar{
+    width: 100%;
+    height:100px;
+    background-color: #121619;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.navbar .leftside img{
+    width:70px;
+    
+}
+.navbar .leftside{
+    flex:50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+.navbar .rightside{
+    height: 100%;
+    flex: 50%;
+    display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.navbar a{
+    text-decoration: none;
+    border: 20px;
+    color:aliceblue;
+    padding:20px ;
+
+}
+
+.active{
+  background: red;
+}
+.navbar .rightside .bar{
+  display: block;
+  
+}
+.navbar .leftside .hiddenlinks{
+  display: none;
+    
+}
+.navbar .rightside button{
+  display:none;
+}
+.navbar #close img{
+  display: inherit;
+}
+.navbar #open img{
+  display: none;
+}
+.navbar #close .hiddenlinks{
+  display: none;
+}
+.navbar #open .hiddenlinks{
+  display: inherit;
+  padding-left: 15px;
+  padding: 10px;
+}
+.navbar #open{
+  padding: 0px;
+}
+.navbar .rightside #close .bar{
+  display: block;
+  color: aqua;
+}
+.navbar .rightside #open .bar{
+  display: none;
+  
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  @media screen and (max-width:768px){
+    .navbar .rightside button {
+        display:block;
+      }
+      .navbar .rightside .bar{
+        display: none;
+      }
+      .navbar .leftside .hiddenlinks{
+        display: none;
+          
+      }
+      
+  }
+  
+  
